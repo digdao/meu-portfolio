@@ -1,0 +1,39 @@
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+}
+
+.habilidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+}
+
+.habilidade-nome {
+    font-weight: 500;
+}
+
+.status {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.status.conheco {
+    /*background-color: rgba(56, 189, 248, 0.15);*/
+    background-color: var(--cor-destaque-suave);
+    color: var(--cor-destaque);
+}
+
+.status.estudando {
+    /*background-color: rgba(167, 139, 250, 0.15);*/
+    background-color: var(--cor-destaque-2-suave);
+    color: var(--cor-destaque-2);
+}

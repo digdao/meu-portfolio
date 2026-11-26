@@ -1,0 +1,24 @@
+.contato-texto {
+    color: var(--cor-texto-suave);
+}
+
+.links-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.links-contato a {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 999px;
+    color: var(--cor-texto);
+    transition: all 0.2s;
+}
+
+.links-contato a:hover {
+    border-color: var(--cor-destaque);
+    color: var(--cor-destaque);
+}

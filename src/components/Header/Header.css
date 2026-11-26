@@ -1,0 +1,44 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    /*background-color: rgba(15, 23, 42, 0.9);*/
+    background-color: var(--cor-fundo-translucido);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo-ponto {
+    color: var(--cor-destaque);
+}
+
+.menu {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.menu a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    color: var(--cor-texto-suave);
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: var(--cor-texto);
+}
+
+/* Link da página em que o usuário está */
+.menu a.active {
+    border-bottom-color: var(--cor-destaque);
+    color: var(--cor-destaque);
+}

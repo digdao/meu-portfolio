@@ -1,0 +1,50 @@
+/* Estrutura geral da página: cabeçalho, conteúdo e rodapé */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* Grade da página de projetos */
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+
+@keyframes entrar {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.apresentacao,
+.habilidades,
+.sobre {
+    animation: entrar 0.8s ease both;
+}
+
+.habilidades {
+    animation-delay: 0.2s;
+}
+
+.sobre {
+    animation-delay: 0.4s;
+}

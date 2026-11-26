@@ -1,0 +1,7 @@
+.sobre-texto {
+    max-width: 720px;
+    padding: 1.2rem 1.5rem;
+    background-color: var(--cor-superficie);
+    border-left: 4px solid var(--cor-destaque);
+    border-radius: 0 var(--raio) var(--raio) 0;
+}
